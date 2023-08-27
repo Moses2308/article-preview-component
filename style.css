@@ -61,3 +61,17 @@ body {
 .share__toggle {
   display: none;
 }
+.share__button {
+  padding: 1.25rem;
+  background-color: var(--color-lightGrayishBlue);
+  border-radius: 50%;
+  position: relative;
+}
+.share__button > img {
+  --translateX: -50%;
+  --translateY: -50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(var(--translateX), var(--translateY));
+}
