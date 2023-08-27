@@ -7,3 +7,37 @@
   --weight-normal: 500;
   --weight-heavy: 700;
 }
+
+body {
+  min-height: 100vh;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  color: var(--color-desaturatedDarkBlue);
+  background-color: var(--color-lightGrayishBlue);
+
+  display: grid;
+  place-items: center;
+}
+.article-card {
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.img-box {
+  height: 220px;
+  overflow: hidden;
+}
+.article-content {
+  margin: 2.7rem;
+  /* might have to change this to padding */
+}
+.content__title {
+  font-size: 1rem;
+  color: var(--color-veryDarkGrayishBlue);
+  margin-bottom: 0.7rem;
+}
