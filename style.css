@@ -33,7 +33,7 @@ body {
   overflow: hidden;
 }
 .article-content {
-  margin: 2.7rem;
+  margin: 2rem 2.7rem;
   /* might have to change this to padding */
 }
 .content__title {
@@ -45,8 +45,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
-  margin-top: 2rem;
+  padding: 1.25rem 2.7rem;
 }
 .author {
   display: flex;
@@ -57,15 +58,16 @@ body {
   width: 2.5rem;
   border-radius: 50%;
 }
-/* share styles */
-.share__toggle {
-  display: none;
+.author__name {
+  color: var(--color-veryDarkGrayishBlue);
+  font-weight: var(--weight-heavy);
 }
 .share__button {
-  padding: 1.25rem;
+  padding: 1rem;
   background-color: var(--color-lightGrayishBlue);
   border-radius: 50%;
   position: relative;
+  z-index: 2;
 }
 .share__button > img {
   --translateX: -50%;
@@ -74,4 +76,23 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(var(--translateX), var(--translateY));
+}
+.share__toggle {
+  position: absolute;
+  background-color: var(--color-veryDarkGrayishBlue);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1;
+  padding: 0 2.7rem;
+
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+.share__toggle > p {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  color: var(--color-grayishBlue);
 }
