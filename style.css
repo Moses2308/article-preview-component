@@ -96,3 +96,7 @@ body {
   letter-spacing: 0.25rem;
   color: var(--color-grayishBlue);
 }
+.hidden {
+  display: none;
+}
+/* query breakpoint will be at 670px */
