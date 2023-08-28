@@ -33,7 +33,7 @@ body {
   overflow: hidden;
 }
 .article-content {
-  margin: 2rem 2.7rem;
+  margin: 2rem 2.7rem 1rem 2.7rem;
   /* might have to change this to padding */
 }
 .content__title {
@@ -47,7 +47,7 @@ body {
   align-items: center;
   position: relative;
 
-  padding: 1.25rem 2.7rem;
+  padding: 1rem 2.7rem;
 }
 .author {
   display: flex;
